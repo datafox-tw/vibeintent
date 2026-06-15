@@ -1,0 +1,4 @@
+include CHANGELOG.md
+include README.zh-TW.md
+recursive-include docs *.md
+

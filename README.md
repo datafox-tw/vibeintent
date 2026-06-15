@@ -1,5 +1,7 @@
 # vibeintent
 
+[繁體中文 README](README.zh-TW.md)
+
 VibeIntent is a local, tool-agnostic audit layer for AI-assisted coding. It records your intent, watches Git diffs, and produces a Markdown report you can use before code review.
 
 Version `0.1.0` is intentionally offline-first:
@@ -22,6 +24,11 @@ vibeintent check
 ```
 
 Reports are stored in `.vibeintent/sessions/`.
+
+Packaging and release notes:
+
+- [Publishing guide](docs/publishing.md)
+- [Changelog](CHANGELOG.md)
 
 ## v0.1 Design Boundaries
 

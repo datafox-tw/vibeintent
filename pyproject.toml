@@ -9,16 +9,28 @@ description = "Tool-agnostic intent and diff reports for AI-assisted coding sess
 readme = "README.md"
 requires-python = ">=3.9"
 authors = [{ name = "VibeIntent" }]
-license = { text = "MIT" }
+license = "MIT"
+license-files = ["LICENSE"]
 keywords = ["ai", "coding", "git", "diff", "code-review"]
 classifiers = [
   "Development Status :: 3 - Alpha",
   "Environment :: Console",
   "Intended Audience :: Developers",
+  "Operating System :: OS Independent",
   "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
   "Topic :: Software Development :: Version Control :: Git",
 ]
 dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/blackwingedkite/vibeintent"
+Repository = "https://github.com/blackwingedkite/vibeintent"
+Issues = "https://github.com/blackwingedkite/vibeintent/issues"
 
 [project.scripts]
 vibeintent = "vibeintent.cli:main"
@@ -26,3 +38,5 @@ vibeintent = "vibeintent.cli:main"
 [tool.setuptools.packages.find]
 where = ["src"]
 
+[tool.setuptools.package-data]
+vibeintent = ["py.typed"]
